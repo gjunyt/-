@@ -1,0 +1,7 @@
+# cd D:\기초웹개발론
+# git init
+# git status
+# git add
+# git commit
+# git remote add origin { remote repository https://github.com/gjunyt/- }
+# git push origin master
