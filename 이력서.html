@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>이력서 기말고사</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .layer {
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            width: 500px;
+            height: 650px;
+            background: white;
+            margin: -50px 0 0 -50px;
+            border: 1px solid black;
+        }
+        .img {
+            position: absolute;
+            top: 1%;
+            left: 48%;
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 12px;
+        }
+        .img2 {
+            width: 150px;
+            height: 150px;
+        }
+        .letter {
+            position: absolute;
+            top: 9%;
+            left: 48%;
+        }
+        .letter_email {
+            position: absolute;
+            top: 12%;
+            left: 34%;
+        }
+        .letter_tel {
+            position: absolute;
+            top: 15%;
+            left: 35%;
+        }
+        .table {
+            position: absolute;
+            top: 26%;
+            left: 13%;
+        }
+        .tr {
+            width: 100%
+        }
+        .p3 {
+            position: absolute;
+            top: 22%;
+            left: 48%;
+        }
+        .p3_2 {
+            font-size: 12px;
+            position: absolute;
+            top: 38%;
+            left: 4%;
+        }
+        .p3_3 {
+            font-size: 15px;
+            position: absolute;
+            top: 37%;
+            left: 54%;
+        }
+        .p3_4 {
+            font-size: 15px;
+            position: absolute;
+            top: 60%;
+            left: 8%;
+        }
+        .p3_5{
+            font-size: 15px;
+            position: absolute;
+            top: 60%;
+            left: 58%;
+        }
+        .ol {
+            font-size: 12px;
+            position: absolute;
+            top: 40%;
+            left: 8%;
+        }
+        .dt {
+            font-size: 12px;
+            position: absolute;
+            top: 40%;
+            left: 53%;
+        }
+        .dd {
+            font-size: 12px;
+            position: absolute;
+            top: 42%;
+            left: 48%;
+        }
+        section {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 69%;
+            left: 8%;
+            animation-name: cube;
+            animation-duration: 6s;
+            animation-timing-function: inherit;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            transform-style: preserve-3d;
+        }
+        .section {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 69%;
+            left: 58%;
+            animation-name: cube2;
+            animation-duration: 6s;
+            animation-timing-function: inherit;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            transform-style: preserve-3d;
+        }
+        @keyframes cube {
+            from {
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            to {
+                transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            }
+        }
+        @keyframes cube2 {
+            from {
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            to {
+                transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+            }
+        }
+        .cube {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.6;
+            backface-visibility: hidden;
+            opacity: 0.6;
+        }
+        .cube2 {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.6;
+            backface-visibility: hidden;
+            opacity: 0.6;
+        }
+        .cube:nth-child(1) {
+            transform: rotateY(0deg) translate3d(0px, 0px, 75px);
+            background: greenyellow;
+        }
+        .cube:nth-child(2) {
+            transform: rotateY(90deg) translate3d(0px, 0px, 75px);
+            background: yellow;
+        }
+        .cube:nth-child(3) {
+            transform: rotateY(180deg) translate3d(0px, 0px, 75px);
+            background:white;
+        }
+        .cube:nth-child(4) {
+            transform: rotateY(270deg) translate3d(0px, 0px, 75px);
+            background: red;
+        }
+        .cube:nth-child(5) {
+            transform: rotateX(90deg) translate3d(0px, 0px, 75px);
+            background:crimson;
+        }
+        .cube:nth-child(6) {
+            transform: rotateX(270deg) translate3d(0px, 0px, 75px);
+            background: skyblue;
+        }
+        .cube2:nth-child(1) {
+            transform: rotateY(0deg) translate3d(0px, 0px, 75px);
+            background: darkgreen;
+        }
+        .cube2:nth-child(2) {
+            transform: rotateY(90deg) translate3d(0px, 0px, 75px);
+            background: orange;
+        }
+        .cube2:nth-child(3) {
+            transform: rotateY(180deg) translate3d(0px, 0px, 75px);
+            background:purple;
+        }
+        .cube2:nth-child(4) {
+            transform: rotateY(270deg) translate3d(0px, 0px, 75px);
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="layer">
+        <div>
+            <img class="img" src="캡처.png">
+            <br>
+            <a class="letter">전영탁</a>
+            <a class="letter_email" href="mailto:gjunyt@gmail.com">이메일:gjunyt@gmail.com</a>
+            <a class="letter_tel" href='tel:010-7669-9052'>전화번호:010-7669-9052</a>
+        </div> 
+        <div>
+            <p3 class="p3">경력</p3>
+            <table class="table">
+                <tr class="tr">
+                    <th>학력/경력</th>
+                    <th>세부사항</th>
+                </tr>
+                <tr class="tr">
+                    <th style="font-size: 12px;">제주대학교 졸업</th>
+                    <th style="font-size: 12px;">2022년 2월 졸업</th>
+                </tr>
+                <tr class="tr">
+                    <th style="font-size: 12px;">(주)네오플 취업</th>
+                    <th style="font-size: 12px;">2022년 3월 ~ 2025년 10월까지 근무, 게임개발담당</th>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p3 class="p3_2">자신있는 프로그래밍 언어</p3>
+            <ol class="ol">
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+            </ol>
+        </div>
+        <div>
+            <dl>
+                <p3 class="p3_3">담당 프로젝트</p3>
+                <dt class="dt">날씨변화에 따른 교통량 변화 어플</dt>
+                <dd class="dd">- 시시각각 변하는 제주도의 날씨에 따른 제주도내의 도로 교통량 변화와 그에 따른 대중교통 시간대의 변화등을 예측하는 어플 </dd>
+            </dl>
+        </div>
+        <p3 class="p3_4">키워드 큐브</p3>
+        <p3 class="p3_5">직육면체</p3>
+        <section>
+            <div class="cube">계산이 빠름</div>
+            <div class="cube">신중함</div>
+            <div class="cube">산만함</div>
+            <div class="cube">게으름</div>
+            <div class="cube">피로</div>
+            <div class="cube">이해가 빠름</div>
+        </section>
+        <section class="section">
+            <div class="cube2"><img class="img2" src="기초1.png" ></div>
+            <div class="cube2"><img class="img2" src="기초2.png" ></div>
+            <div class="cube2"><img class="img2" src="기초3.png" ></div>
+            <div class="cube2"><img class="img2" src="기초4.png" ></div>
+        </section>
+    </div>
+    <div style="position: fixed; right: 10px; bottom: 10px;">
+        <img style="width: 50px; height: 50px;" src="캡처.png">
+    </div>
+</body>
+</html>
